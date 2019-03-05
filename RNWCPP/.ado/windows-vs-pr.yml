@@ -54,9 +54,9 @@ jobs:
 
       - task: CmdLine@2
         displayName: npm install
-        workingDirectory: RNWCPP
         inputs:
           script: npm install
+          workingDirectory: RNWCPP
 
       - task: PowerShell@2
         displayName: Cleanup any packagers left over from other builds
