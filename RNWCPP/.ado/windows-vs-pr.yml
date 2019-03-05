@@ -71,9 +71,9 @@ jobs:
 
       - task: CmdLine@2
         displayName: npm run build
-        workingDirectory: RNWCPP
         inputs:
           script: npm run build
+          workingDirectory: RNWCPP
 
       - task: NuGetCommand@2
         displayName: NuGet restore
