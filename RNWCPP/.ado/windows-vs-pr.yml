@@ -52,6 +52,11 @@ jobs:
             Get-NetTCPConnection -LocalPort 8081 -ErrorAction Ignore | ForEach-Object { Stop-Process $_.OwningProcess -ErrorAction Ignore }
             Get-NetTCPConnection -LocalPort 5555 -ErrorAction Ignore | ForEach-Object { Stop-Process $_.OwningProcess -ErrorAction Ignore }
 
+      - task: npmAuthenticate@0
+        displayName: NPM Authenticate # friendly name displayed in the UI
+        inputs:
+          workingFile: RNWCPP\.npmrc
+
       - task: CmdLine@2
         displayName: npm install
         inputs:
