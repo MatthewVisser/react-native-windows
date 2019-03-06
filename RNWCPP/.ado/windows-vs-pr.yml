@@ -183,7 +183,7 @@ jobs:
         condition: and(succeeded(), ne(variables['BuildPlatform'], 'ARM'))
         inputs:
           targetType: filePath # filePath | inline
-          filePath: $(Build.SourcesDirectory)\Scripts\Tfs\Start-TestServers.ps1
+          filePath: $(Build.SourcesDirectory)\RNWCPP\Scripts\Tfs\Start-TestServers.ps1
           arguments: -SourcesDirectory $(Build.SourcesDirectory)\RNWCPP\node_modules\@microsoft\react-native -Preload
 
       - task: VSTest@2
