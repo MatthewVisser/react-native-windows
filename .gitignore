@@ -147,6 +147,10 @@ bld/
 
 # Certificates
 *.pfx
+-WindowsSampleApp_TemporaryKey.pfx
+-WindowsSampleCSharpApp_TempraryKey.pfx
+-Universal.IntegrationTests_TemporaryKey.pfx
+-React.Windows.Universal.UnitTests_TemporaryKey.pfx
 
 # OpenCover
 *_coverage.xml
